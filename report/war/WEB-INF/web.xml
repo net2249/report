@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>registMember</servlet-name>
+		<servlet-class>kr.ac.shinhan.registMember</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registMember</servlet-name>
+		<url-pattern>/registMember</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> 
+ 		<servlet-name>RetrieveMember</servlet-name> 
+ 		<servlet-class>kr.ac.shinhan.RetrieveMemberServlet</servlet-class> 
+ 	</servlet> 
+ 	<servlet-mapping> 
+ 		<servlet-name>RetrieveMember</servlet-name> 
+		<url-pattern>/RetrieveMemberServlet</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet> 
+27 		<servlet-name>ReadMemberServlet</servlet-name> 
+28 		<servlet-class>kr.ac.shinhan.ReadMemberServlet</servlet-class> 
+29 	</servlet> 
+30 	<servlet-mapping> 
+31 		<servlet-name>ReadMemberServlet</servlet-name> 
+32 		<url-pattern>/ReadMemberServlet</url-pattern> 
+33 	</servlet-mapping> 
+
+
+<servlet> 
+27 		<servlet-name>deleteTeam</servlet-name> 
+28 		<servlet-class>kr.ac.shinhan.deleteTeam</servlet-class> 
+29 	</servlet> 
+30 	<servlet-mapping> 
+31 		<servlet-name>deleteTeam</servlet-name> 
+32 		<url-pattern>/deleteTeam</url-pattern> 
+33 	</servlet-mapping> 
+ 	
+<servlet> 
+27 		<servlet-name>updateMember</servlet-name> 
+28 		<servlet-class>kr.ac.shinhan.updateMember</servlet-class> 
+29 	</servlet> 
+30 	<servlet-mapping> 
+31 		<servlet-name>updateMember</servlet-name> 
+32 		<url-pattern>/updateMember</url-pattern> 
+33 	</servlet-mapping>  	
+
+
+
+<servlet> 
+27 		<servlet-name>updateTeam</servlet-name> 
+28 		<servlet-class>kr.ac.shinhan.updateTeam</servlet-class> 
+29 	</servlet> 
+30 	<servlet-mapping> 
+31 		<servlet-name>updateTeam</servlet-name> 
+32 		<url-pattern>/updateTeam</url-pattern> 
+33 	</servlet-mapping> 
+ 	
+
+
+
+ 	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
